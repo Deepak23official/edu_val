@@ -27,31 +27,30 @@
 </head>
 <body class="bg-gradient-to-r from-blue-50 to-gray-50">
 
-  <nav class="bg-white shadow-md fixed w-full top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-between items-center h-16">
+  <nav class="fixed top-0 z-50 w-full px-4 bg-white shadow-md">
+    <div class="px-6 mx-auto max-w-7xl">
+        <div class="flex flex-wrap items-center justify-between h-16">
             <!-- Logo and Brand -->
-            <div class="flex items-center">
-                <button class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900" onclick="toggleMenu()">
-                    <i class="fas fa-bars text-xl"></i>
+            <div class="flex items-center justify-between max-sm:w-full max-sm:flex-row-reverse">
+                <button class="p-2 text-gray-600 rounded-md md:hidden hover:text-gray-900" onclick="toggleMenu()">
+                    <i class="text-xl fas fa-bars"></i>
                 </button>
                 <a href="#" class="flex items-center space-x-2">
-                    <span class="bg-cyan-500 text-white text-2xl w-8 h-8 flex items-center justify-center rounded"><i class="fa-solid fa-book"></i></span>
-                    <span class="text-2xl font-semibold text-gray-800">Smart Choice</span>
+                    <span class="font-semibold md:text-4xl max-sm:text-2xl text-cyan-500">YourWish</span>
                 </a>
             </div>
               <!-- Navigation Links - Desktop -->
-          <div class="hidden md:flex items-center space-x-8">
-            <a href="index.html" class="text-gray-800 font-mono font-bold hover:text-cyan-500">HOME</a>
-            <a href="about.html" class="text-gray-800 font-mono font-bold hover:text-cyan-500">ABOUT</a>
-            <a href="courses.html" class="text-cyan-500 font-mono font-bold">COURSES</a>
-            <a href="contact.html" class="text-gray-800 font-mono font-bold hover:text-cyan-500">CONTACT</a>
+          <div class="items-center hidden space-x-8 md:flex">
+            <a href="index.html" class="font-sans font-semibold text-gray-800 hover:text-cyan-500">HOME</a>
+            <a href="about.html" class="font-semibold text-gray-800 hover:text-cyan-500">ABOUT</a>
+            <a href="courses.html" class="font-semibold text-cyan-500">COURSES</a>
+            <a href="contact.html" class="font-semibold text-gray-800 hover:text-cyan-500">CONTACT</a>
         </div>
         </div>
 
         <!-- Mobile Menu -->
-        <div class="nav-links hidden md:hidden bg-white pb-4" id="mobile-menu">
-            <div class="flex flex-col space-y-4 px-4">
+        <div class="hidden pb-4 bg-white nav-links md:hidden" id="mobile-menu">
+            <div class="flex flex-col px-2 space-y-4">
                 <a href="index.html" class="text-gray-800 hover:text-cyan-500">HOME</a>
                 <a href="about.html" class="text-gray-800 hover:text-cyan-500">ABOUT</a>
                 <a href="courses.html" class="text-cyan-500">COURSES</a>
@@ -62,107 +61,132 @@
 </nav>
 
   <!-- Container -->
-  <div class="min-h-screen flex flex-col items-center py-24 px-6">
+  <div class="flex flex-col items-center min-h-screen px-6 py-24">
     <!-- Heading -->
-    <h1 class="text-5xl font-bold text-gray-800 mb-10 text-center animate-fade-in">Explore College Courses</h1>
+    <h1 class="mb-10 text-5xl font-bold text-center text-gray-800 max-sm:text-2xl animate-fade-in">Explore College Courses</h1>
 
     <!-- Categories -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+    <!-- <div class="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"> -->
 
       <!-- Science Courses -->
-      <div class="bg-white rounded-lg shadow-lg p-6 animate-fade-in">
-        <h2 class="text-2xl font-bold text-blue-500 mb-4">Science Courses</h2>
-        <ul class="space-y-3 text-gray-700 text-lg">
-          <li><a href="B.Sc course/cps.html" class="hover:text-blue-600">&#10148; B.Sc. Computer Science</a></li>
-          <li><a href="B.Sc course/Math.html" class="hover:text-blue-600">&#10148; B.Sc. Mathematics</a></li>
-          <li><a href="B.Sc course/phy.html" class="hover:text-blue-600">&#10148; B.Sc. Physics</a></li>
-          <li><a href="B.Sc course/chemistry.html" class="hover:text-blue-600">&#10148; B.Sc. Chemistry</a></li>
-          <li><a href="B.Sc course/Biotech.html" class="hover:text-blue-600">&#10148; B.Sc. Biotechnology</a></li>
-          <li><a href="B.Sc course/Agri.html" class="hover:text-blue-600">&#10148; B.Sc. Agriculture</a></li>
-          <li><a href="B.Sc course/zoo.html" class="hover:text-blue-600">&#10148; B.Sc. Zoology</a></li>
-          <li><a href="B.Sc course/bot.html" class="hover:text-blue-600">&#10148; B.Sc. Botany</a></li>
-        </ul>
-      </div>
+      <!-- Categories -->
+<div class="grid w-full max-w-6xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
 
-      <!-- Engineering Courses -->
-      <div class="bg-white rounded-lg shadow-lg p-6 animate-fade-in">
-        <h2 class="text-2xl font-bold text-green-500 mb-4">Engineering Courses</h2>
-        <ul class="space-y-3 text-gray-700 text-lg">
-          <li><a href="Engeenering/Computer.html" class="hover:text-green-600">&#10148; B.E. Computer Science Engineering</a></li>
-          <li><a href="Engeenering/Mechanical.html" class="hover:text-green-600">&#10148; B.E. Mechanical Engineering</a></li>
-          <li><a href="Engeenering/Civil.html" class="hover:text-green-600">&#10148; B.E. Civil Engineering</a></li>
-          <li><a href="Engeenering/Electrical.html" class="hover:text-green-600">&#10148; B.E. Electrical Engineering</a></li>
-          <li><a href="Engeenering/Electronics.html" class="hover:text-green-600">&#10148; B.E. Electronics & Communication</a></li>
-          <li><a href="Engeenering/Aeronautical.html" class="hover:text-green-600">&#10148; B.E. Aeronautical Engineering</a></li>
-          <li><a href="Engeenering/Agricultural.html" class="hover:text-green-600">&#10148; B.E. Agricultural Engineering</a></li>
-          <li><a href="Engeenering/Biomedical.html" class="hover:text-green-600">&#10148; B.E. Biomedical Engineering</a></li>
-        </ul>
-      </div>
+  <!-- Science Courses -->
+  <div class="p-6 transition duration-300 transform rounded-lg shadow-lg bg-gradient-to-br from-blue-50 to-blue-100 animate-fade-in hover:scale-105">
+    <div class="flex items-center mb-4">
+      <i class="mr-3 text-3xl text-blue-500 fas fa-flask"></i>
+      <h2 class="text-2xl font-bold text-blue-700">Science Courses</h2>
+    </div>
+    <ul class="space-y-3 text-lg text-gray-700">
+      <li><a href="B.Sc course/cps.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Computer Science</a></li>
+      <li><a href="B.Sc course/Math.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Mathematics</a></li>
+      <li><a href="B.Sc course/phy.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Physics</a></li>
+      <li><a href="B.Sc course/chemistry.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Chemistry</a></li>
+      <li><a href="B.Sc course/Biotech.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Biotechnology</a></li>
+      <li><a href="B.Sc course/Agri.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Agriculture</a></li>
+      <li><a href="B.Sc course/zoo.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Zoology</a></li>
+      <li><a href="B.Sc course/bot.html" class="transition duration-300 hover:text-blue-600">&#10148; B.Sc. Botany</a></li>
+    </ul>
+  </div>
 
-      <!-- Arts Courses -->
-      <div class="bg-white rounded-lg shadow-lg p-6 animate-fade-in">
-        <h2 class="text-2xl font-bold text-purple-500 mb-4">Arts Courses</h2>
-        <ul class="space-y-3 text-gray-700 text-lg">
-          <li><a href="BA course/English.html" class="hover:text-purple-600">&#10148; B.A. English Literature</a></li>
-          <li><a href="BA course/History.html" class="hover:text-purple-600">&#10148; B.A. History</a></li>
-          <li><a href="BA course/Political.html" class="hover:text-purple-600">&#10148; B.A. Political Science</a></li>
-          <li><a href="BA course/Psychology.html" class="hover:text-purple-600">&#10148; B.A. Psychology</a></li>
-          <li><a href="BA course/Sociology.html" class="hover:text-purple-600">&#10148; B.A. Sociology</a></li>
-          <li><a href="BA course/Philosophy.html" class="hover:text-purple-600">&#10148; B.A. Philosophy</a></li>
-          <li><a href="BA course/Fine.html" class="hover:text-purple-600">&#10148; B.A. Fine Arts</a></li>
-          <li><a href="BA course/Agriculture.html" class="hover:text-purple-600">&#10148; B.A. Agriculture</a></li>
-        </ul>
-      </div>
-       <!-- Medical Courses -->
-       <div class="bg-white rounded-lg shadow-lg p-6 animate-fade-in">
-        <h2 class="text-2xl font-bold text-red-500 mb-4">Medical Courses</h2>
-        <ul class="space-y-3 text-gray-700 text-lg">
-          <li><a href="Medical/Mbbs.html" class="hover:text-red-600">&#10148; MBBS</a></li>
-          <li><a href="Medical/BDS.html" class="hover:text-red-600">&#10148; BDS (Bachelor of Dental Surgery)</a></li>
-          <li><a href="Medical/Nursing.html" class="hover:text-red-600">&#10148; B.Sc. Nursing</a></li>
-          <li><a href="Medical/B.Pharm.html" class="hover:text-red-600">&#10148; B.Pharm</a></li>
-          <li><a href="Medical/BPT.html" class="hover:text-red-600">&#10148; BPT (Bachelor of Physiotherapy)</a></li>
-          <li><a href="Medical/BOT.html" class="hover:text-red-600">&#10148; BOT (Occupational Therapy)</a></li>
-          <li><a href="Medical/BHMS.html" class="hover:text-red-600">&#10148; BHMS (Bachelor of Homeopathic Medicine)</a></li>
-        </ul>
-      </div>
+  <!-- Engineering Courses -->
+  <div class="p-6 transition duration-300 transform rounded-lg shadow-lg bg-gradient-to-br from-green-50 to-green-100 animate-fade-in hover:scale-105">
+    <div class="flex items-center mb-4">
+      <i class="mr-3 text-3xl text-green-500 fas fa-cogs"></i>
+      <h2 class="text-2xl font-bold text-green-700">Engineering Courses</h2>
+    </div>
+    <ul class="space-y-3 text-lg text-gray-700">
+      <li><a href="Engeenering/Computer.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Computer Science Engineering</a></li>
+      <li><a href="Engeenering/Mechanical.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Mechanical Engineering</a></li>
+      <li><a href="Engeenering/Civil.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Civil Engineering</a></li>
+      <li><a href="Engeenering/Electrical.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Electrical Engineering</a></li>
+      <li><a href="Engeenering/Electronics.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Electronics & Communication</a></li>
+      <li><a href="Engeenering/Aeronautical.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Aeronautical Engineering</a></li>
+      <li><a href="Engeenering/Agricultural.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Agricultural Engineering</a></li>
+      <li><a href="Engeenering/Biomedical.html" class="transition duration-300 hover:text-green-600">&#10148; B.E. Biomedical Engineering</a></li>
+    </ul>
+  </div>
 
-      <!-- Commerce Courses -->
-      <div class="bg-white rounded-lg shadow-lg p-6 animate-fade-in">
-        <h2 class="text-2xl font-bold text-yellow-500 mb-4">Commerce Courses</h2>
-        <ul class="space-y-3 text-gray-700 text-lg">
-          <li><a href="Bcom/Account.html" class="hover:text-yellow-600">&#10148; B.Com. Accounting</a></li>
-          <li><a href="Bcom/Finance.html" class="hover:text-yellow-600">&#10148; B.Com. Finance</a></li>
-          <li><a href="Bcom/Marketing.html" class="hover:text-yellow-600">&#10148; B.Com. Marketing</a></li>
-          <li><a href="Bcom/Business.html" class="hover:text-yellow-600">&#10148; B.Com. Business Administration</a></li>
-          <li><a href="Bcom/Economics.html" class="hover:text-yellow-600">&#10148; B.Com. Economics</a></li>
-          <li><a href="Bcom/Banking.html" class="hover:text-yellow-600">&#10148; B.Com. Banking</a></li>
-          <li><a href="Bcom/Commerce.html" class="hover:text-yellow-600">&#10148; B.Com. E-Commerce</a></li>
-        </ul>
-      </div>
+  <!-- Arts Courses -->
+  <div class="p-6 transition duration-300 transform rounded-lg shadow-lg bg-gradient-to-br from-purple-50 to-purple-100 animate-fade-in hover:scale-105">
+    <div class="flex items-center mb-4">
+      <i class="mr-3 text-3xl text-purple-500 fas fa-paint-brush"></i>
+      <h2 class="text-2xl font-bold text-purple-700">Arts Courses</h2>
+    </div>
+    <ul class="space-y-3 text-lg text-gray-700">
+      <li><a href="BA course/English.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. English Literature</a></li>
+      <li><a href="BA course/History.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. History</a></li>
+      <li><a href="BA course/Political.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. Political Science</a></li>
+      <li><a href="BA course/Psychology.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. Psychology</a></li>
+      <li><a href="BA course/Sociology.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. Sociology</a></li>
+      <li><a href="BA course/Philosophy.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. Philosophy</a></li>
+      <li><a href="BA course/Fine.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. Fine Arts</a></li>
+      <li><a href="BA course/Agriculture.html" class="transition duration-300 hover:text-purple-600">&#10148; B.A. Agriculture</a></li>
+    </ul>
+  </div>
 
-      <!-- Professional Courses -->
-      <div class="bg-white rounded-lg shadow-lg p-6 animate-fade-in">
-        <h2 class="text-2xl font-bold text-teal-500 mb-4">Professional Courses</h2>
-        <ul class="space-y-3 text-gray-700 text-lg">
-          <li><a href="Professinal/Business.html" class="hover:text-teal-600">&#10148; B.B.A. Business Administration</a></li>
-          <li><a href="Professinal/Event.html" class="hover:text-teal-600">&#10148; B.B.A. Event Management</a></li>
-          <li><a href="Professinal/Fashion.html" class="hover:text-teal-600">&#10148; B.F.A. Fashion Design</a></li>
-          <li><a href="Professinal/Animation.html" class="hover:text-teal-600">&#10148; B.F.A. Animation and Multimedia</a></li>
-          <li><a href="Professinal/Hotel.html" class="hover:text-teal-600">&#10148; B.H.M. Hotel Management</a></li>
-          <li><a href="Professinal/Journalism.html" class="hover:text-teal-600">&#10148; B.A. Journalism & Mass Communication</a></li>
-          <li><a href="Professinal/LLB.html" class="hover:text-teal-600">&#10148; LLB (Law)</a></li>
-        </ul>
-      </div>
+  <!-- Medical Courses -->
+  <div class="p-6 transition duration-300 transform rounded-lg shadow-lg bg-gradient-to-br from-red-50 to-red-100 animate-fade-in hover:scale-105">
+    <div class="flex items-center mb-4">
+      <i class="mr-3 text-3xl text-red-500 fas fa-heartbeat"></i>
+      <h2 class="text-2xl font-bold text-red-700">Medical Courses</h2>
+    </div>
+    <ul class="space-y-3 text-lg text-gray-700">
+      <li><a href="Medical/Mbbs.html" class="transition duration-300 hover:text-red-600">&#10148; MBBS</a></li>
+      <li><a href="Medical/BDS.html" class="transition duration-300 hover:text-red-600">&#10148; BDS (Bachelor of Dental Surgery)</a></li>
+      <li><a href="Medical/Nursing.html" class="transition duration-300 hover:text-red-600">&#10148; B.Sc. Nursing</a></li>
+      <li><a href="Medical/B.Pharm.html" class="transition duration-300 hover:text-red-600">&#10148; B.Pharm</a></li>
+      <li><a href="Medical/BPT.html" class="transition duration-300 hover:text-red-600">&#10148; BPT (Bachelor of Physiotherapy)</a></li>
+      <li><a href="Medical/BOT.html" class="transition duration-300 hover:text-red-600">&#10148; BOT (Occupational Therapy)</a></li>
+      <li><a href="Medical/BHMS.html" class="transition duration-300 hover:text-red-600">&#10148; BHMS (Bachelor of Homeopathic Medicine)</a></li>
+    </ul>
+  </div>
+
+  <!-- Commerce Courses -->
+  <div class="p-6 transition duration-300 transform rounded-lg shadow-lg bg-gradient-to-br from-yellow-50 to-yellow-100 animate-fade-in hover:scale-105">
+    <div class="flex items-center mb-4">
+      <i class="mr-3 text-3xl text-yellow-500 fas fa-chart-line"></i>
+      <h2 class="text-2xl font-bold text-yellow-700">Commerce Courses</h2>
+    </div>
+    <ul class="space-y-3 text-lg text-gray-700">
+      <li><a href="Bcom/Account.html" class="transition duration-300 hover:text-yellow-600">&#10148; B.Com. Accounting</a></li>
+      <li><a href="Bcom/Finance.html" class="transition duration-300 hover:text-yellow-600">&#10148; B.Com. Finance</a></li>
+      <li><a href="Bcom/Marketing.html" class="transition duration-300 hover:text-yellow-600">&#10148; B.Com. Marketing</a></li>
+      <li><a href="Bcom/Business.html" class="transition duration-300 hover:text-yellow-600">&#10148; B.Com. Business Administration</a></li>
+      <li><a href="Bcom/Economics.html" class="transition duration-300 hover:text-yellow-600">&#10148; B.Com. Economics</a></li>
+      <li><a href="Bcom/Banking.html" class="transition duration-300 hover:text-yellow-600">&#10148; B.Com. Banking</a></li>
+      <li><a href="Bcom/Commerce.html" class="transition duration-300 hover:text-yellow-600">&#10148; B.Com. E-Commerce</a></li>
+    </ul>
+  </div>
+
+  <!-- Professional Courses -->
+  <div class="p-6 transition duration-300 transform rounded-lg shadow-lg bg-gradient-to-br from-teal-50 to-teal-100 animate-fade-in hover:scale-105">
+    <div class="flex items-center mb-4">
+      <i class="mr-3 text-3xl text-teal-500 fas fa-briefcase"></i>
+      <h2 class="text-2xl font-bold text-teal-700">Professional Courses</h2>
+    </div>
+    <ul class="space-y-3 text-lg text-gray-700">
+      <li><a href="Professinal/Business.html" class="transition duration-300 hover:text-teal-600">&#10148; B.B.A. Business Administration</a></li>
+      <li><a href="Professinal/Event.html" class="transition duration-300 hover:text-teal-600">&#10148; B.B.A. Event Management</a></li>
+      <li><a href="Professinal/Fashion.html" class="transition duration-300 hover:text-teal-600">&#10148; B.F.A. Fashion Design</a></li>
+      <li><a href="Professinal/Animation.html" class="transition duration-300 hover:text-teal-600">&#10148; B.F.A. Animation and Multimedia</a></li>
+      <li><a href="Professinal/Hotel.html" class="transition duration-300 hover:text-teal-600">&#10148; B.H.M. Hotel Management</a></li>
+      <li><a href="Professinal/Journalism.html" class="transition duration-300 hover:text-teal-600">&#10148; B.A. Journalism & Mass Communication</a></li>
+      <li><a href="Professinal/LLB.html" class="transition duration-300 hover:text-teal-600">&#10148; LLB (Law)</a></li>
+    </ul>
+  </div>
+</div>
     </div>
   </div>
-</body>
+
 
 
 <script>
   function toggleMenu() {
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenu.classList.toggle('active');
-}
+    const menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden');
+  }
 </script>
+</body>
 </html>
